@@ -1,0 +1,119 @@
+:root {
+    --color-blue-primary: #0077C5;
+    --color-gray-light: #ECEEF1;
+    --color-gray-primary: #757575;
+    --color-gray-dark: #4c4c4c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue-primary);
+}
+
+button {
+    background-color: var(--color-blue-primary);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 1em;
+}
+
+input {
+    padding-left: 5px;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.tiny {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--color-gray-light);
+    font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial sans-serif;
+    line-height: 1.1;
+}
+
+.sign-in {
+    text-align: right;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sign-in > * {
+    display: inline-block;
+}
+
+.sign-in button {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.container {
+    text-align: center;
+}
+
+.create-account {
+    background-color: white;
+    display: inline-block;
+    padding: 30px;
+    width: 380px;
+    border: 1px solid var(--color-gray-primary);
+}
+
+.create-account > * {
+    margin-bottom: 20px;
+}
+
+.create-account h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-field {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.form-field input {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #d8d8d8;
+    margin-top: 10px;
+}
+
+.phone-field .tiny {
+    margin-top: 10px;
+}
+
+.password {
+    position: relative;
+}
+
+.password input {
+    padding-right: 40px;
+}
+
+.password .fa {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-20%);
+    color: var(--color-gray-primary);
+}
+
+form button {
+    width: 100%;
+}
