@@ -14,6 +14,7 @@
 a {
     text-decoration: none;
     color: var(--color-blue-primary);
+    cursor: pointer;
 }
 
 button {
@@ -25,8 +26,16 @@ button {
     font-size: 1em;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 input {
     padding-left: 5px;
+}
+
+li {
+    display: inline-block;
 }
 
 .fa {
@@ -40,13 +49,13 @@ input {
 body {
     background-color: var(--color-gray-light);
     font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial sans-serif;
-    line-height: 1.1;
+    line-height: 1.35;
 }
 
 .sign-in {
     text-align: right;
     padding: 1em;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
 }
@@ -64,16 +73,83 @@ body {
     text-align: center;
 }
 
+.intuit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intuit .intuit-main, .intuit-services > * {
+    display: inline-block;
+}
+
+.intuit .intuit-main {
+    background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/ecosystem_logos_new-a1ca21cc.png);
+    width: 118px;
+    height: 35px;
+}
+
+.intuit-services ul {
+    margin: 15px 0;
+}
+
+.intuit-services ul li:nth-of-type(1) {
+    background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/mint-favicon-4accf8f4.svg) no-repeat;
+    height: 23px;
+    width: 23px;
+}
+
+.intuit-services ul li:nth-of-type(2) {
+    background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/mint-text-0fa36974.svg) no-repeat;
+    width: 37px;
+    height: 20px;
+}
+
+.intuit-services ul li:nth-of-type(3) {
+    background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/quickbooks-favicon@2x-c89488e8.svg) no-repeat;
+    height: 23px;
+    width: 23px;
+}
+
+.intuit-services ul li:nth-of-type(4) {
+    background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/quick-books-text-db6c72bf.svg) no-repeat;
+    width: 98px;
+    height: 22px;
+}
+
+.intuit-services ul li:nth-of-type(5) {
+    background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/tt-favicon@2x-fbd64ab8.svg) no-repeat;
+    height: 23px;
+    width: 23px;
+}
+
+.intuit-services ul li:nth-of-type(6) {
+    background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/turbo-tax-text-9bc025c5.svg) no-repeat;
+    width: 74px;
+    height: 22px;
+}
+
+.intuit-services ul li:nth-child(even) {
+    margin-right: 5px;
+}
+
+.intuit-services ul li:last-of-type {
+    margin-right: 0;
+}
+
 .create-account {
     background-color: white;
     display: inline-block;
-    padding: 30px;
+    margin-bottom: 30px;
     width: 380px;
     border: 1px solid var(--color-gray-primary);
 }
 
 .create-account > * {
     margin-bottom: 20px;
+}
+
+.create-account .wrapper {
+    padding: 30px;
 }
 
 .create-account h1 {
@@ -116,4 +192,52 @@ body {
 
 form button {
     width: 100%;
+}
+
+form button:hover {
+    background-color: var(--color-blue-primary);
+    opacity: .96;
+}
+
+.agreement {
+    margin-top: 50px;
+    color: var(--color-gray-primary);
+    font-size: 12px;
+    padding: 0 20px;
+    line-height: 1.75;
+}
+
+.recaptcha {
+    background-color: var(--color-gray-light);
+    width: 100%;
+    margin-bottom: 0;
+    padding: 25px;
+}
+
+footer {
+    color: var(--color-gray-dark);
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+footer .legal {
+    margin-bottom: 5px;
+}
+
+footer .legal ul li {
+    margin-right: 10px;
+}
+
+footer .legal ul li:last-of-type {
+    margin-right: 0;
+}
+
+footer .legal a {
+    color: var(--color-gray-dark);
+}
+
+@media(min-width: 770px) {
+    .sign-in {
+        display: flex;
+    }
 }
